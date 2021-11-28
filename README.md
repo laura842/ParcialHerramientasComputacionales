@@ -1,6 +1,6 @@
 # ParcialHerramientasComputacionales
 ### ¿Qué problema es?
-_cursiva
+*cursiva*
 ### ¿Qué modelo computacional lo resuelve?
 
 ### ¿Qué recibe el algoritmo que como entrada?
