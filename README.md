@@ -9,15 +9,6 @@ Además de esto, el programa debe requerir (en su versión inicial) el código d
 ### ¿Qué modelo computacional lo resuelve?
 
 ```python
-totalProducto = int(unidades * precio)
-totalParcial = int(totalProducto - (totalProducto * desc))
-```
-
-```python
-totalSinDesc += totalProducto
-```
-
-```python
 checkFunc = input("¿Seguir registrando usuarios? (Si o No): ")
 
 if checkFunc == "Si" or checkFunc == "Sí" or checkFunc == "SI" or checkFunc == "si" or checkFunc == "sí":
@@ -44,3 +35,12 @@ hello world!
 ```
 
 ### ¿Cómo lo calcula?
+
+```python
+totalProducto = int(unidades * precio)
+totalParcial = int(totalProducto - (totalProducto * desc))
+```
+
+```python
+totalSinDesc += totalProducto
+```
