@@ -36,7 +36,7 @@ Asimismo, después de imprimir la respuesta esperada, el algoritmo recibe dos in
 ### ¿Cuál es la salida esperada? 
 En la versión final hay dos salidas esperadas. Debido a que el cliente puede ingresar varias cantidades de productos diferentes, entonces se va creando algo similar a una cuenta en la que se muestra la cédula y el rol del cliente, al igual que el código del producto y el precio con descuento de dicho producto (de acuerdo con las cantidades que la persona vaya a llevar).
 
-```
+```python
 ansParcial = ansParcial + cedula + " debe pagar $" + str(totalParcial) + " por el producto " + codProducto + "."
 ```
 
