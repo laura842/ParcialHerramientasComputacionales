@@ -12,7 +12,7 @@ Además de esto, el programa debe requerir (en su versión inicial) el código d
 El programa recibe múltiples inputs por parte del usuario, algunos convirtiéndose a números enteros (ints) de manera que se posible operar con ellos, y otros dejándose como cadenas de texto (str):
 * **integers** - precio y unidades del producto a registrar
 * **strings** - cédula y rol del cliente, así como el código del producto. 
-<br />
+<br>
 Además de esto, después de imprimir la respuesta esperada, el algoritmo recibe dos inputs más para corroborar si el cliente desea que un ciclo particular del programa siga corriendo. Uno de estos es para verificar si el usuario desea registrar más productos y el otro es para saber si hay más clientes por pasar a la caja. Estos son inputs de cadena (str) que aceptan diferentes versiones de "Si" o "No".
 ### ¿Cuál es la salida esperada? 
 
