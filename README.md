@@ -27,7 +27,7 @@ elif checkFunc == "No" or checkFunc == "NO" or checkFunc == "no":
 En lo anterior se puede observar uno de los inputs que el usuario del programa debe ingresar durante su funcionamiento. De acuerdo con este input, con ayuda de los condicionales, se determina si el programa continúa registrando clientes (es decir, sigue iterando el ciclo dentro del cual se encuentra este condicional) o si termina el programa.
 
 ### ¿Qué recibe el algoritmo como entrada?
-El programa recibe múltiples inputs por parte del usuario, algunos convirtiéndose a números enteros (ints) de manera que se posible operar con ellos, y otros dejándose como cadenas de texto (str):
+El programa recibe múltiples inputs por parte del usuario, algunos convirtiéndose a números enteros (ints) de manera que se posible operar con ellos, y otros dejándose como cadenas de texto (str): <br>
 * **integers** - precio y unidades del producto a registrar
 * **strings** - cédula y rol del cliente, así como el código del producto. 
 <br>
