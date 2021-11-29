@@ -54,7 +54,6 @@ Si le gustaría leer información acerca de los posibles errores del programa as
 ### ¿Cómo lo calcula?
 Respecto a los valores númericos, hay dos operaciones matemáticas que se realizan durante la ejecución del código:
 * La primera corresponde a los cálculos que se hacen para poder imprimir _ansParcial_, la variable que se mostró en la pregunta anterior. Para esto se toma el número de unidades que el cliente va a adquirir (variable _unidades_) y se multiplica por el precio de una unidad (variable _precio_). Luego se realiza el descuento, _desc_, pertinente (que se ha asignado anteriormente de acuerdo con el _rol_).
-  A todo esto se le realiza la operación **_int_** debido a que en Colombia no se usan valores decimales / centavos. El resultado, almacenado en _totalParcial_ es lo que se imprime en la respuesta dada por cada producto que registra el usuario.
 
 ```python
 totalProducto = int(unidades * precio)
@@ -63,8 +62,16 @@ totalParcial = int(totalProducto - (totalProducto * desc))
 
   A todo esto se le realiza la operación **_int_** debido a que en Colombia no se usan valores decimales / centavos. El resultado, almacenado en _totalParcial_ es lo que se imprime en la respuesta dada por cada producto que registra el usuario.
 
-
+* La segunda corresponde al total de la cuenta, después de que el cliente indica que ya no quiere registrar más productos. Cada vez que el usuario ingresa un producto, el precio de este multiplicado por las unidades (sin el descuento), se añade al total final:
 
 ```python
 totalSinDesc += totalProducto
 ```
+
+Luego, a esta variable _totalSinDesc_ se le realiza el descuento para obtener el total (variable _total_):
+
+```python
+total = int(totalSinDesc - (totalSinDesc * desc))
+```
+
+![picture alt](http://via.placeholder.com/200x150 "Title is optional")
