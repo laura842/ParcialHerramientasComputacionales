@@ -1,13 +1,13 @@
 # ParcialHerramientasComputacionales
 ### ¿Qué problema es?
-El *problema* que se plantea y se busca resolver es el de realizar un programa para un sistema de descuentos en la cafetería de la Universidad Javeriana como ayuda para la situación económica de estudiantes y profesores debido a la pandemia. Este programa debe solicitar los datos del cliente, específicamente su cédula y rol dentro de la Universidad. Dependiendo de este último, el descuento será diferente: si el cliente es profesor, tendrá un 20% de descuento; si es estudiante, tendrá 50% de descuento. 
+El **problema** que se plantea y se busca resolver es el de realizar un programa para un sistema de descuentos en la cafetería de la Universidad Javeriana como ayuda para la situación económica de estudiantes y profesores debido a la pandemia. Este programa debe solicitar los datos del cliente, específicamente su cédula y rol dentro de la Universidad. Dependiendo de este último, el descuento será diferente: si el cliente es profesor, tendrá un 20% de descuento; si es estudiante, tendrá 50% de descuento. 
 
 Además de esto, el programa debe requerir (en su versión inicial) el código del producto a adquirir, el precio de este y la cantidad que el cliente desea comprar. Después de ingresar esta información, el programa debe realizar los cálculos correspondientes de manera que pueda imprimir el total de la compra después de que se le ha aplicado el descuento, así como otros datos, de la siguiente forma:
 
 > ”El **_rol_** con cédula **_número_**, debe pagar **_valor_** por el producto **_código_**”
 
 ### ¿Qué modelo computacional lo resuelve?
-Este programa usa estructuras básicas de Python para resolver la situación planteada anteriormente. Mediante requerimientos de inputs por parte del usuario, condicionales, ciclos y cálculos simples se otorga respuesta a las necesidades expuestas. Un ejemplo de esto se puede observar abajo (todas las partes de código en este ReadMe se encuentran unificadas en el archivo parcialHerramientasVer4Final.py que está en este repositorio):
+Este programa usa estructuras básicas de Python para resolver la situación planteada anteriormente. Mediante requerimientos de inputs por parte del usuario, condicionales, ciclos y cálculos simples se otorga respuesta a las necesidades expuestas. Un ejemplo de esto se puede observar abajo (todas las partes de código en este ReadMe se encuentran unificadas en el archivo **_parcialHerramientasVer4Final.py_** que está en este repositorio):
 
 ```python
 checkFunc = input("¿Seguir registrando usuarios? (Si o No): ")
@@ -41,6 +41,14 @@ ansParcial = ansParcial + cedula + " debe pagar $" + str(totalParcial) + " por e
 ```
 
 Cabe aclarar que la primera parte de ansParcial varía de acuerdo con el rol ingresado por el usuario (profesora, profesor o estudiante).
+
+Cuando se le pregunta al usuario si va a ingresar más productos, si este da una respuesta negativa, se imprime otro mensaje diferente con el total de la cuenta, así:
+
+```python
+ans = ans + cedula + " debe pagar $" + str(total) + " en total."
+```
+
+Si le gustaría leer información acerca de los posibles errores del programa así como un poco más de documentación respecto a esto, refiérase al documento **_respuestas.txt_** que también se encuentra en este repositorio.
 
 ### ¿Cómo lo calcula?
 
