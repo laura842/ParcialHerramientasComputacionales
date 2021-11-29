@@ -8,6 +8,15 @@ Además de esto, el programa debe requerir (en su versión inicial) el código d
 
 ### ¿Qué modelo computacional lo resuelve?
 
+```python
+totalProducto = int(unidades * precio)
+totalParcial = int(totalProducto - (totalProducto * desc))
+```
+
+```python
+totalSinDesc += totalProducto
+```
+
 ### ¿Qué recibe el algoritmo como entrada?
 El programa recibe múltiples inputs por parte del usuario, algunos convirtiéndose a números enteros (ints) de manera que se posible operar con ellos, y otros dejándose como cadenas de texto (str):
 * **integers** - precio y unidades del producto a registrar
