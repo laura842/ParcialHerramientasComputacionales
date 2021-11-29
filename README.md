@@ -52,7 +52,8 @@ ans = ans + cedula + " debe pagar $" + str(total) + " en total."
 Si le gustaría leer información acerca de los posibles errores del programa así como un poco más de documentación respecto a esto, refiérase al documento **_respuestas.txt_** que también se encuentra en este repositorio.
 
 ### ¿Cómo lo calcula?
-Respecto a los valores númericos, hay dos operaciones matemáticas que se realizan durante la ejecución del código. La primera corresponde a los cálculos que se hacen para poder imprimir _ansParcial_, la variable que se mostró en la pregunta anterior. Para esto se toma el número de unidades que el cliente va a adquirir (variable _unidades_) y se multiplica por el precio de una unidad (variable _precio_). Luego se realiza el descuento, _desc_, pertinente (que se ha asignado anteriormente de acuerdo con el _rol_).
+Respecto a los valores númericos, hay dos operaciones matemáticas que se realizan durante la ejecución del código:
+* La primera corresponde a los cálculos que se hacen para poder imprimir _ansParcial_, la variable que se mostró en la pregunta anterior. Para esto se toma el número de unidades que el cliente va a adquirir (variable _unidades_) y se multiplica por el precio de una unidad (variable _precio_). Luego se realiza el descuento, _desc_, pertinente (que se ha asignado anteriormente de acuerdo con el _rol_).
 
 ```python
 totalProducto = int(unidades * precio)
