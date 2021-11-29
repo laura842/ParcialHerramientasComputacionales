@@ -7,6 +7,7 @@ Además de esto, el programa debe requerir (en su versión inicial) el código d
 > ”El **_rol_** con cédula **_número_**, debe pagar **_valor_** por el producto **_código_**”
 
 ### ¿Qué modelo computacional lo resuelve?
+Este programa usa estructuras básicas de Python para resolver la situación planteada anteriormente. Mediante requerimientos de inputs por parte del usuario, condicionales, ciclos y cálculos simples se otorga respuesta a las necesidades expuestas. Un ejemplo de esto se puede observar abajo (todas las partes de código en este ReadMe se encuentran unificadas en el archivo parcialHerramientasVer4Final.py que está en este repositorio):
 
 ```python
 checkFunc = input("¿Seguir registrando usuarios? (Si o No): ")
@@ -18,7 +19,12 @@ if checkFunc == "Si" or checkFunc == "Sí" or checkFunc == "SI" or checkFunc == 
   ansParcial = ""
   totalSinDesc = 0
   print("--------------")
-  ```
+  
+elif checkFunc == "No" or checkFunc == "NO" or checkFunc == "no":
+  funcionamiento = False
+ ```
+ 
+En lo anterior se puede observar uno de los inputs que el usuario del programa debe ingresar durante su funcionamiento. De acuerdo con este input, con ayuda de los condicionales, se determina si el programa continúa registrando clientes (es decir, sigue iterando el ciclo dentro del cual se encuentra este condicional) o si termina el programa.
 
 ### ¿Qué recibe el algoritmo como entrada?
 El programa recibe múltiples inputs por parte del usuario, algunos convirtiéndose a números enteros (ints) de manera que se posible operar con ellos, y otros dejándose como cadenas de texto (str):
