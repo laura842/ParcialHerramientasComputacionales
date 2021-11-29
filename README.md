@@ -74,4 +74,4 @@ Luego, a esta variable _totalSinDesc_ se le realiza el descuento para obtener el
 total = int(totalSinDesc - (totalSinDesc * desc))
 ```
 
-![picture alt](https://www2.javerianacali.edu.co/sites/ujc/files/field/image/puj_logo_azul_copia1.png "UJaveriana")
+- - - -
