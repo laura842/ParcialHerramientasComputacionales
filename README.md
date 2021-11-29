@@ -28,7 +28,7 @@ En lo anterior se puede observar uno de los inputs que el usuario del programa d
 
 ### ¿Qué recibe el algoritmo como entrada?
 El programa recibe múltiples inputs por parte del usuario, algunos convirtiéndose a números enteros (ints) de manera que se posible operar con ellos, y otros dejándose como cadenas de texto (str): 
-<br />
+
 * **integers** - precio y unidades del producto a registrar
 * **strings** - cédula y rol del cliente, así como el código del producto. 
 <br>
@@ -52,11 +52,16 @@ ans = ans + cedula + " debe pagar $" + str(total) + " en total."
 Si le gustaría leer información acerca de los posibles errores del programa así como un poco más de documentación respecto a esto, refiérase al documento **_respuestas.txt_** que también se encuentra en este repositorio.
 
 ### ¿Cómo lo calcula?
+Respecto a los valores númericos, hay dos operaciones matemáticas que se realizan durante la ejecución del código. La primera corresponde a los cálculos que se hacen para poder imprimir _ansParcial_, la variable que se mostró en la pregunta anterior. Para esto se toma el número de unidades que el cliente va a adquirir (variable _unidades_) y se multiplica por el precio de una unidad (variable _precio_). Luego se realiza el descuento, _desc_, pertinente (que se ha asignado anteriormente de acuerdo con el _rol_).
 
 ```python
 totalProducto = int(unidades * precio)
 totalParcial = int(totalProducto - (totalProducto * desc))
 ```
+
+A todo esto se le realiza la operación **_int_** debido a que en Colombia no se usan valores decimales / centavos. El resultado, almacenado en _totalParcial_ es lo que se imprime en la respuesta dada por cada producto que registra el usuario.
+
+
 
 ```python
 totalSinDesc += totalProducto
