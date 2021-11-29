@@ -60,7 +60,7 @@ totalProducto = int(unidades * precio)
 totalParcial = int(totalProducto - (totalProducto * desc))
 ```
 
-A todo esto se le realiza la operación **_int_** debido a que en Colombia no se usan valores decimales / centavos. El resultado, almacenado en _totalParcial_ es lo que se imprime en la respuesta dada por cada producto que registra el usuario.
+  A todo esto se le realiza la operación **_int_** debido a que en Colombia no se usan valores decimales / centavos. El resultado, almacenado en _totalParcial_ es lo que se imprime en la respuesta dada por cada producto que registra el usuario.
 
 
 
