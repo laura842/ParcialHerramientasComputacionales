@@ -34,11 +34,13 @@ El programa recibe múltiples inputs por parte del usuario, algunos convirtiénd
 Asimismo, después de imprimir la respuesta esperada, el algoritmo recibe dos inputs más para corroborar si el cliente desea que un ciclo particular del programa siga corriendo. Uno de estos es para verificar si el usuario desea registrar más productos y el otro es para saber si hay más clientes por pasar a la caja. Estos son inputs de cadena (str) que aceptan diferentes versiones de "Si" o "No".
 
 ### ¿Cuál es la salida esperada? 
-En la versión final hay dos salidas esperadas. Debido a que el cliente puede ingresar varias cantidades de productos diferentes, entonces se va creando algo similar a una cuenta en la que se muestra la cédula, el rol
+En la versión final hay dos salidas esperadas. Debido a que el cliente puede ingresar varias cantidades de productos diferentes, entonces se va creando algo similar a una cuenta en la que se muestra la cédula y el rol del cliente, al igual que el código del producto y el precio con descuento de dicho producto (de acuerdo con las cantidades que la persona vaya a llevar).
 
 ```
-hello world!
+ansParcial = ansParcial + cedula + " debe pagar $" + str(totalParcial) + " por el producto " + codProducto + "."
 ```
+
+Cabe aclarar que la primera parte de ansParcial varía de acuerdo con el rol ingresado por el usuario (profesora, profesor o estudiante).
 
 ### ¿Cómo lo calcula?
 
